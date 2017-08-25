@@ -1,0 +1,8 @@
+schema: kata.ai/schema/merapi/1.0
+
+greeting: Hello
+
+components:
+    firstComponent: FirstComponent
+
+main: firstComponent
