@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@yesboss/merapi-plugin-express": "^0.3.2",
     "js-yaml": "^3.9.1",
-    "merapi": "^0.17.2"
+    "merapi": "^0.17.2",
+    "merapi-plugin-express": "^0.3.7",
+    "merapi-plugin-service": "^0.3.5"
   }
 }
