@@ -6,7 +6,7 @@ Merapi is a IoC (Inversion of Control) container that allows developer to create
 
  [Merapi](https://github.com/kata-ai/merapi) was developed by an engineer from Kata.ai
  
- below are some examples of merapi:
+ ### below are some examples of using merapi:
  
 - [Hello world](https://github.com/cyberid41/merapi-example/tree/master/hello-world)
 - [Merapi Express](https://github.com/cyberid41/merapi-example/tree/master/merapi-express)
