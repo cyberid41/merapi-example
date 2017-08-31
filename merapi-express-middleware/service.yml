@@ -1,0 +1,28 @@
+schema: kata.ai/schema/merapi/1.0
+name: ${package.name}
+version: ${package.version}
+
+greeting: Hello
+
+components:
+    firstComponent: FirstComponent
+    controller: Controller
+    acl: AccessController
+    app: 
+        type: express
+        config: application
+application: 
+    host: localhost
+    port: 8080
+    routes: 
+        /hello:
+            - acl.role(["member","admin"])
+            - GET: controller.getHello
+              /world: 
+                - acl.role(["admin"])
+                - controller.getHelloWorld
+
+plugins:
+    - express
+
+main: firstComponent
