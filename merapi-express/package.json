@@ -1,15 +1,17 @@
 {
-  "name": "merapi-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "js-yaml": "^3.9.1",
-    "merapi": "^0.17.2"
-  }
+	"name": "merapi-example",
+	"version": "1.0.0",
+	"description": "examples of application of the framework merapi",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -rf ./lib",
+		"build": "tsc"
+	},
+	"author": "Edi Santoso <edi@kata.ai>",
+	"homepage": "https://github.com/cyberid41/merapi-example#readme",
+	"license": "MIT",
+	"dependencies": {
+		"js-yaml": "^3.9.1",
+		"merapi": "^0.17.2"
+	}
 }
