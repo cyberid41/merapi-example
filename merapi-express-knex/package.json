@@ -1,0 +1,37 @@
+{
+  "name": "merapi-example",
+  "version": "1.0.0",
+  "description": "examples of application of the framework merapi",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "tsc",
+    "start": "node start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyberid41/merapi-example.git"
+  },
+  "keywords": [
+    "merapi",
+    "knex",
+    "express"
+  ],
+  "author": "Edi Santoso <edi@kata.ai>",
+  "homepage": "https://github.com/cyberid41/merapi-example/tree/express-knex/merapi-express-knex#readme",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "js-yaml": "^3.9.1",
+    "knex": "^0.13.0",
+    "merapi": "^0.17.2",
+    "merapi-plugin-express": "^0.3.7",
+    "mysql": "^2.14.1",
+    "node-uuid": "^1.4.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.37",
+    "@types/knex": "^0.0.61",
+    "@types/node-uuid": "^0.0.28"
+  }
+}
