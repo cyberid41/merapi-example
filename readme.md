@@ -11,3 +11,4 @@ Merapi is a IoC (Inversion of Control) container that allows developer to create
 - [Hello world](https://github.com/cyberid41/merapi-example/tree/master/hello-world)
 - [Merapi Express](https://github.com/cyberid41/merapi-example/tree/master/merapi-express)
 - [Merapi Express Middleware](https://github.com/cyberid41/merapi-example/tree/master/merapi-express-middleware)
+- [Merapi Express Knex](https://github.com/cyberid41/merapi-example/tree/master/merapi-express-knex)
