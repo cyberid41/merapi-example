@@ -1,0 +1,57 @@
+schema: kata.ai/schema/merapi/1.0
+
+name: ${package.name}
+version: ${package.version}
+
+plugins:
+    - express
+
+main: main
+
+components:
+    main: Main
+    knex:
+        type: component
+        path: stores/knex
+        load: true
+
+    contactController: controllers/ContactController
+    constroller: controllers/BaseController
+
+    contactMapRepo: repos/ContactMapRepo
+ 
+    contact: managers/ContactManager
+
+    app:
+        type: express
+        config: application
+
+stores:
+    knex:
+        client: mysql
+        connection:
+            host: localhost
+            user: root
+            password: root
+            port: 3306
+            database: merapi_express_knex
+            db: merapi_express_knex
+            encrypt: true
+        pool:
+            min: '2'
+            max: '10'
+        migrations:
+            tableName: migrations
+            
+application:
+    host: localhost
+    port: 8080
+    router:
+        mergeParams: true
+    bodyParser:
+        limit: 5mb
+    routes:
+
+       #contact management
+        /contacts: contactController.crud("contact")
+            
