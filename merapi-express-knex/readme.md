@@ -51,8 +51,8 @@ stores:
 
 ## Actions Handled By routes
 
-| Verb          | Uri           |      |    Action     |
-| ------------- |:--------------------:|:-------------:|
+| Verb          | Uri                  |    Action     |
+|---------------|----------------------|---------------|
 | GET           | `/contacts`          |    list       |
 | POST          | `/contacts`          |    store      |
 | GET           | `/contacts/{contact}`|    show       |
