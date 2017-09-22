@@ -10,7 +10,7 @@ export interface IPaginated<T> {
 }
 
 export interface IContactMapRepo {
-    list(page: number, limit: number, userId?: string): Promise<IContactMap[]>;
+    list(page: number, limit: number): Promise<IContactMap[]>;
     get(contactId: string): Promise<IContactMap>;
     create(contactMap: IContactMap): Promise<IContactMap>;
     update(contactId: string, contactMap: IContactMap): Promise<IContactMap>;
